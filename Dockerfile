@@ -10,4 +10,4 @@ RUN apt-get update -y \
 COPY texlive.profile /root/texlive.profile
 # VOLUME texlive-packages:/usr/local/texlive/2017
 
-RUN ./install-tl --profile=texlive.profile
+RUN ./install-tl --repo=http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet/ --profile=texlive.profile
